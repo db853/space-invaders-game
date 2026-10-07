@@ -28,8 +28,7 @@ public class StartMenu extends JPanel implements ActionListener, MouseListener, 
         rectColour = baseColour;
 
         try {
-            String pathname = "C:\\Users\\david\\OneDrive\\Documents\\DB\\" +
-                    "QUB\\CSC1025\\Intellij projects\\Space Invaders\\Fonts\\ElectronPulseItalic-6YJX1.ttf";
+            String pathname = "Fonts/ElectronPulseItalic-6YJX1.ttf";
             font = Font.createFont(Font.TRUETYPE_FONT, new File(pathname)).deriveFont(64f);
         } catch (FontFormatException | IOException e) {
             System.out.println("Error");

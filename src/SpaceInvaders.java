@@ -174,16 +174,16 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         addKeyListener(this);
         addMouseListener(this);
 
-        Image backgroundImage = new ImageIcon(getClass().getResource("./background.png")).getImage();
-        Image pauseButtonImage = new ImageIcon(getClass().getResource("./pause button.png")).getImage();
-        Image playerImage = new ImageIcon(getClass().getResource("./player.png")).getImage();
-        Image greenEnemyImage = new ImageIcon(getClass().getResource("./green.png")).getImage();
-        Image redEnemyImage = new ImageIcon(getClass().getResource("./red.png")).getImage();
-        Image yellowEnemyImage = new ImageIcon(getClass().getResource("./yellow.png")).getImage();
-        fullShelter = new ImageIcon(getClass().getResource("./full shelter.png")).getImage();
-        Image shelterStage1 = new ImageIcon(getClass().getResource("./shelter stage 1.png")).getImage();
-        Image shelterStage2 = new ImageIcon(getClass().getResource("./shelter stage 2.png")).getImage();
-        Image shelterStage3 = new ImageIcon(getClass().getResource("./shelter stage 3.png")).getImage();
+        Image backgroundImage = new ImageIcon(getClass().getResource("./Sprites/background.png")).getImage();
+        Image pauseButtonImage = new ImageIcon(getClass().getResource("./Sprites/pause button.png")).getImage();
+        Image playerImage = new ImageIcon(getClass().getResource("./Sprites/player.png")).getImage();
+        Image greenEnemyImage = new ImageIcon(getClass().getResource("./Sprites/green.png")).getImage();
+        Image redEnemyImage = new ImageIcon(getClass().getResource("./Sprites/red.png")).getImage();
+        Image yellowEnemyImage = new ImageIcon(getClass().getResource("./Sprites/yellow.png")).getImage();
+        fullShelter = new ImageIcon(getClass().getResource("./Sprites/full shelter.png")).getImage();
+        Image shelterStage1 = new ImageIcon(getClass().getResource("./Sprites/shelter stage 1.png")).getImage();
+        Image shelterStage2 = new ImageIcon(getClass().getResource("./Sprites/shelter stage 2.png")).getImage();
+        Image shelterStage3 = new ImageIcon(getClass().getResource("./Sprites/shelter stage 3.png")).getImage();
 
         background = new Background(backgroundImage);
         pauseButton = new PauseButton(pauseButtonImage);
@@ -194,12 +194,9 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         yellowEnemy = new YellowEnemy(yellowEnemyImage);
         enemyBullet = new Bullet();
 
-        playerExplosion = loadAudio("C:\\Users\\david\\OneDrive\\Documents\\DB\\" +
-                "QUB\\CSC1025\\Intellij projects\\Space Invaders\\Sounds\\explosion.wav");
-        invaderKilled = loadAudio("C:\\Users\\david\\OneDrive\\Documents\\DB\\" +
-                "QUB\\CSC1025\\Intellij projects\\Space Invaders\\Sounds\\invaderkilled.wav");
-        shoot = loadAudio("C:\\Users\\david\\OneDrive\\Documents\\DB\\" +
-                "QUB\\CSC1025\\Intellij projects\\Space Invaders\\Sounds\\shoot.wav");
+        playerExplosion = loadAudio("Sounds/explosion.wav");
+        invaderKilled = loadAudio("Sounds/invaderKilled.wav");
+        shoot = loadAudio("Sounds/shoot.wav");
 
         int x = BOARD_WIDTH / 8 ;
         int y = (int) (BOARD_HEIGHT / 1.5);
